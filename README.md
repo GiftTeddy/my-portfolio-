@@ -76,5 +76,6 @@ ng generate component component-name
 
 ## Deployed Website
 
+https://my-portfolio-eta-ochre-73.vercel.app/projects
 
 
