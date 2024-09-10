@@ -9,7 +9,7 @@
     color: white;
     padding: 2rem;
     box-sizing: border-box; 
-    position: relative; /* Added for background elements */
+    position: relative; 
 }
 
 .background-elements {
