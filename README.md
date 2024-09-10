@@ -1,27 +1,80 @@
-# MyPortfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.2.
 
-## Development server
+# My Portfolio
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This project is a personal portfolio website built using Angular. It showcases projects, skills, and professional background. The project is generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.2.
 
-## Code scaffolding
+## Overview
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This Angular-based portfolio includes the following pages:
+- Home: A brief introduction about yourself.
+- About: A detailed professional biography and list of skills.
+- Projects: A list of projects from github.
+- Contact: A form for potential employers or clients to reach out.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Development Server
 
-## Running unit tests
+To start the development server:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/my-portfolio.git
+   ```
 
-## Running end-to-end tests
+2. Navigate into the project folder:
+   ```bash
+   cd my-portfolio
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
 
-## Further help
+4. Run the development server:
+   ```bash
+   ng serve
+   ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+5. Open your browser and go to `http://localhost:4200/`. The app will automatically reload if you make changes to any source files.
+
+## Components and Pages
+
+- HomeComponent: Displays a brief introduction and overview.
+- AboutComponent: Provides details about your professional background and skills.
+- ProjectsComponent: Links to github projects and code repositories.
+- ContactComponent: A contact form that allows visitors to get in touch with you.
+
+## Project Structure
+
+src/
+├── app/
+│   ├── pages/
+│   │   ├── home/
+│   │   ├── about/
+│   │   ├── projects/
+│   │   ├── contact/
+│   ├── app.component.html
+│   ├── app.module.ts
+│   ├── app.route.ts
+├── assets/
+├── environments/
+
+
+## Code Scaffolding
+
+To generate a new component:
+
+ng generate component component-name
+
+## Technologies Used
+
+- Angular: Frontend framework for building web applications.
+- HTML5 & CSS3: For structuring and styling the website.
+- TypeScript Programming language for building Angular applications.
+
+## Deployed Website
+
+
+
