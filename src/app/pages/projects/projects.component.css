@@ -1,0 +1,175 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100vw;
+    background: linear-gradient(to right, black 25%, rgb(0, 26, 255) 50%);
+    color: white;
+    padding: 2rem;
+    box-sizing: border-box;
+    gap: 3rem;
+    position: relative; 
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    height: 80vh;
+    width: 450px;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card-header {
+    font-size: 24px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #f1c40f;
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-icon {
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle, #ff9a9e, #fad0c4);
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.card-link {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    display: block;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+.background-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.dots, .line, .square {
+    background: rgba(255, 255, 255, 0.2);
+    position: absolute;
+}
+
+.dots {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 10%;
+    left: 10%;
+}
+
+.line {
+    width: 200px;
+    height: 2px;
+    top: 30%;
+    left: 20%;
+    transform: rotate(45deg);
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    right: 20%;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 1.5rem;
+        gap: 2rem;
+    }
+
+    .card {
+        height: 70vh;
+        width: 400px;
+    }
+
+    .dots {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1.5rem; 
+    }
+
+    .card {
+        height: auto;
+        width: 80%; 
+        padding: 1rem;
+    }
+
+    .dots {
+        width: 60px;
+        height: 60px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        height: auto;
+        padding: 1rem 0.5rem;
+        gap: 1rem;
+    }
+
+    .card {
+        height: auto;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .card-header {
+        font-size: 18px; 
+    }
+
+    .card-link {
+        font-size: 14px; 
+    }
+
+    .dots {
+        width: 40px;
+        height: 40px; 
+    }
+}
